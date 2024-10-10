@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.aligh{
+   display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+#image{
+    height: 40px;
+    width: 40px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+.black{
+    background-color: black;
+}
+.white{
+    color: white;
+ 
+}
+#head{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+#head2{
+    display: flex;
+   gap: 7px;
+}
+nav{
+    background-color:#024CAA;
+    display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-around;
+  
+}
+.banner {
+    background-color:#091057;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner button{
+    
+        background-color: #EC8305;
+        font-weight: bold;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+       
+}
+.conatiner-content{
+   
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+    
+
+}
+.container{ 
+    background-color: #FFF8F3;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 25px;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.container h4{
+    color: #024CAA;
+    font-size: 15px;
+    text-align: center;
+   
+}
+.container p{
+    text-align: center;
+   font-size: 15px;
+   margin-top: 15px;
+}
+.card-container{
+    background-color: #DBD3D3;
+   
+}
+.card-container h2{
+    text-align: center;
+    padding: 15px;
+    margin-top: 0px;
+}
+.cards{
+
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    padding: 15px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    
+    align-items: center;
+    background-color: white;
+    padding: 25px;
+    height: 150px;
+    width: 150px;
+}
+.card>img {
+    height: 100px;
+    width: 150px;
+}
+#img4{
+   margin-left: 200px;
+  
+}
+.card button{
+  background-color: #EC8305; 
+  padding: 5px; 
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+footer{
+    background-color: black;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+h3{
+    cursor: pointer;
+}
+
