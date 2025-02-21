@@ -1,0 +1,142 @@
+/* style.css */
+
+/* 1. RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* Gradient background */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333; /* Fallback text color */
+  }
+  
+  /* 2. AUTOMATIC CARD-STYLE WRAPPING 
+     - Every direct child of body (except <style> or <script>) gets a white card. */
+  body > :not(style):not(script) {
+    background: #fff;
+    margin: 0 auto 20px auto; /* Center and add spacing below */
+    max-width: 900px;         /* Constrain width for readability */
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* 3. HEADINGS */
+  h1, h2, h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* 4. PARAGRAPHS */
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* 5. LINKS */
+  a {
+    color: #667eea;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 6. FORMS */
+  form {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="datetime-local"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"],
+  button {
+    background: #667eea;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background: #5563de;
+  }
+  
+  /* 7. TABLES */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background: #667eea;
+    color: #fff;
+  }
+  
+  /* 8. QUIZ QUESTIONS */
+  .question {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-left: 5px solid #667eea;
+    border-radius: 4px;
+    background: #f9f9f9;
+  }
+  
+  /* 9. TIMER */
+  #timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* 10. RESPONSIVE DESIGN */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    body > :not(style):not(script) {
+      padding: 15px;
+      width: 100%;
+    }
+    table,
+    form {
+      width: 100%;
+    }
+  }
+  
